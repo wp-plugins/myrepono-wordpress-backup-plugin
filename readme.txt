@@ -1,0 +1,226 @@
+=== myRepono WordPress Backup Plugin ===
+Plugin URI: http://myrepono.com/wordpress-backup-plugin/
+Author: myRepono (ionix Limited)
+Author URI: http://myRepono.com/
+Contributors: ionix
+Donate link: http://myRepono.com/wordpress-backup-plugin/
+Tags: backup, wordpress backup, wp backup, back-up, restore, restoration, recover, recovery, remote, offline, online, website, file, database, db, mysql, sql, automated, automatic
+Requires at least: 3.0.0
+Tested up to: 3.2
+Stable tag: trunk
+
+
+Automate your WordPress, website & database backups using the myRepono remote website backup service.
+
+
+
+== Description ==
+
+Automate your WordPress, website & database backups using the [myRepono WordPress Backup Plugin & Service](http://myrepono.com/wordpress-backup-plugin/ "myRepono WordPress Backup Plugin & Service").
+
+[myRepono](http://myrepono.com/wordpress-backup-plugin/ "myRepono Website &amp; Database Backup Service") is an online website backup service which enables you to securely backup your WordPress web site files and mySQL database tables using an online and web-based management system.  The myRepono online website backup service allows you to automate the process of backing up your entire WordPress web site and database, including all post, comments and user data, and your WordPress PHP, template and plugin files.  
+
+We provide an easy-to-install WordPress plugin which automates the myRepono API set-up and configuration process, enabling you to setup automated and remote website backups in a matter of minutes.  Comprehensive backup management and restoration tools are provided via myRepono.com, giving you an independent backup management and restoration system if your WordPress installation is unavailable.
+
+myRepono is a commercial backup service which uses a pay-as-you-go balance system.  Users receive $5 USD free credit to help them get started, and with prices starting at 2 cents per day that's enough free credit to backup most WordPress installations for several months!
+
+
+Features & Benefits:
+* Backup unlimited WordPress installations, including all files and database data.
+* Backup unlimited individual files or complete folders using web-based file management tools.
+* Backup individual mySQL tables or complete mySQL databases.
+* Files are encrypted, transmitted and stored securely using up to 256-Bit encryption.
+* Restore files individually or on mass from your backups at any time.
+* Backups are compressed to as little as 10% of their original size.
+* All management is controlled with web-based tool which can be accessed with any web-enabled device.
+* Backup your site every hour, day, week, month, it's up to you.
+* Store as many or as few backups as you like at competitive data storage rates.
+* View or download backups online using simple file management tools.
+* With a single account you can backup an unlimited number of websites.
+* Pay-as-you-go pricing from $0.02 USD per day, with $5 USD free trial!
+* Fast and friendly online technical support available to assist you with all your questions.
+* Compatible with 99% of web servers and hosting companies, and WordPress Multisite/Network compatible.
+
+
+
+== Installation ==
+
+1. Create a directory called `myrepono-wordpress-backup-plugin` in your `/wp-content/plugins/` directory.
+
+2. Upload `myrepono.php` file to the `/wp-content/plugins/myrepono-wordpress-backup-plugin/` directory.
+
+3. Upload `img` directory to the `/wp-content/plugins/myrepono-wordpress-backup-plugin/` directory.
+
+4. Upload `api` directory to the `/wp-content/plugins/myrepono-wordpress-backup-plugin/` directory.
+
+5. Ensure `data` directory exists in `/wp-content/plugins/myrepono-wordpress-backup-plugin/api/` directory.
+
+6. If using a Unix/Linux web server, ensure `/wp-content/plugins/myrepono-wordpress-backup-plugin/api/data/` directory is writable (e.g. permissions/chmod to `755` or `777`).
+
+7. Activate the myRepono WordPress Backup Plugin through the 'Plugins' menu in WordPress.
+
+8. Go to 'myRepono Backup' section of 'Settings' menu.
+
+
+
+== Frequently Asked Questions ==
+
+= What is myRepono and how much does it cost? =
+
+myRepono is a remote website backup service which enables you to backup your WordPress and website files and databases.  myRepono is a commercial backup service which uses a pay-as-you-go balance system.  Users receive $5 USD free credit to help them get started, and with prices starting at 2 cents per day that's enough free credit to backup most WordPress installations for several months!
+
+You can store up to 750MB of backups, and backup up to 75MB per day and only pay $0.02 USD per day!  No payment details are required until you choose to top-up your balance.
+
+= Where can I find information about the myRepono WordPress Backup Plugin? =
+
+Plugin Information: http://myRepono.com/wordpress-backup-plugin/
+
+= Where can I find documentation for the myRepono WordPress Backup Plugin? =
+
+FAQ & Documentation: http://myRepono.com/faq/
+
+= Is support available for this plugin? =
+
+Yes, we provide comprehensive online support free of charge via our online helpdesk at: https://myRepono.com/contact/
+
+= Plugin Requirements =
+
+In addition to the standard WordPress requirements, the myRepono WordPress Backup plugin requires that your PHP `allow_url_fopen` configuration option is set to `on`.  In addition, the PHP curl and OpenSSL extension libraries must be installed and curl must be configured with SSL support.  The myRepono WordPress Backup Plugin includes a CURL Extension Emulation Library which the plugin/API will use if alternate HTTP/HTTPS connection methods fail, therefore PHP CURL support may not be required.  The myRepono WordPress Backup Plugin can only be used on web accessible servers which the myRepono.com system can connect to, the plugin will notify you if your are not using a web accessible server.
+
+= Is the myRepono WordPress Backup Plugin compatible with a WordPress Multisite/Network installation? =
+
+Yes, the myRepono WordPress Backup Plugin is compatible with WordPress Multisite/Network installations, and will enable you to backup your complete WordPress Multisite/Network installation with only a single installation of the myRepono WordPress Backup Plugin (or API).
+ 
+myRepono will backup your WordPress files and databases without any interaction with WordPress - the myRepono WordPress Backup Plugin is essentially an interface for myRepono which automates the API setup process and which gives you a basic management system as part of your WordPress administration panel.
+ 
+This means myRepono can backup a WordPress multisite/networks installation in the same way as a standard single-site installation - to the myRepono API it's just files and databases.
+ 
+The key limitation to this is that since a WordPress multisite/network installation requires changes to the server's Apache configuration, those changes would not be automatically restored by myRepono unless they were managed using a .htaccess file or an Apache configuration file which can be backed-up by your myRepono API.
+
+
+
+== Screenshots ==
+
+1. Automate your WordPress, website & database backups using the myRepono remote website backup service.
+
+2. Automate your WordPress, website & database backups using the myRepono remote website backup service.
+
+
+
+== Changelog ==
+
+= 1.1.2 =
+
+NOTE: If you have a customised myRepono API or a 'myrepono_config.php' file, please ensure you make a backup before upgrading.  These files are located in your `/wp-content/plugins/myrepono-wordpress-backup-plugin/api/` directory.
+
+The myRepono WordPress Backup Plugin now allows you to hide the myRepono backup status box which is shown in the header of the WordPress administration panel, the backup status box will also adapt it's position based on your WordPress version.  The myRepono WordPress Backup Plugin has also been updated to maintain a copy of the 'myrepono_config.php' API configuration file between plugin upgrades (this file only exists if you have customised your myRepono API configuration).  Note, the 'myrepono_config.php' file will be removed from your API directory (/wp-content/plugins/myrepono-wordpress-backup-plugin/api/) when upgrading to plugin v1.1.2 and therefore if the file exists it must be manually restored, the file will not be removed during future plugin upgrades. 
+
+= 1.1.1 =
+
+Plugin will now automatically detect if the associated domain configuration has been removed via myRepono.com and will automatically default to an existing domain when possible.  Additional minor changes to optimise CSS.
+
+= 1.1.0 =
+
+Removal of WordPress is_rtl function requirement which meant WordPress v3.0+ was required.  Additional adjustments to backup listings and backup status module to improve usability.
+
+= 1.0.9 =
+
+Support for CURL Extension Emulation Library added enabling WordPress Backup Plugin and myRepono API to make outgoing HTTP/HTTPS connections when standard CURL support is not available, plugin/API will now attempt a range of connection methods if default methods fail.  Further changes to API/account set-up process to improve usability and customer understanding.
+
+= 1.0.8 =
+
+Resolved additional error when updating myRepono WordPress Backup Plugin.  API is not automatically installed after plugin update, 1.0.6 update addressed this when user visited plugin but not if user did not access plugin section - this update will re-install the API without requiring the user to visit the plugin section of your WordPress administration panel.  The plugin will also notify admin when the API is automatically re-installed.
+
+= 1.0.7 =
+
+Minor usability improvements and interface adjustments.
+
+= 1.0.6 =
+
+CRITICAL UPDATE RESOLVING ERROR WHEN UPDATING MYREPONO WORDPRESS BACKUP PLUGIN
+When updating the myRepono WordPress Backup Plugin your myRepono Backup API is removed which will in-turn cause your backups to fail, this version of the plugin will automatically re-install the API and will notify you if it is unable to do so.
+
+= 1.0.5 =
+
+Domain selection feature added enabling users to view backups for multiple domains (added under same myRepono.com account), with a single WordPress plugin.  Additional adjustments to API installation process in preparation for next API version, and new re-authentication system added for log-in when account password has changed.
+
+= 1.0.4 =
+
+General usability improvements and interface adjustments.
+
+= 1.0.3 =
+
+Minor adjustments to data caching.
+
+= 1.0.2 =
+
+Minor layout and content adjustments.
+
+= 1.0.1 =
+
+Minor adjustments to API installations.
+
+= 1.0.0 =
+
+First official release of plugin.
+
+
+
+== Upgrade Notice ==
+
+= 1.1.2 =
+
+NOTE: If you have a customised myRepono API or a 'myrepono_config.php' file, please ensure you make a backup before upgrading.  These files are located in your `/wp-content/plugins/myrepono-wordpress-backup-plugin/api/` directory.
+
+The myRepono WordPress Backup Plugin now allows you to hide the myRepono backup status box which is shown in the header of the WordPress administration panel, the backup status box will also adapt it's position based on your WordPress version.  The myRepono WordPress Backup Plugin has also been updated to maintain a copy of the 'myrepono_config.php' API configuration file between plugin upgrades (this file only exists if you have customised your myRepono API configuration).  Note, the 'myrepono_config.php' file will be removed from your API directory (/wp-content/plugins/myrepono-wordpress-backup-plugin/api/) when upgrading to plugin v1.1.2 and therefore if the file exists it must be manually restored, the file will not be removed during future plugin upgrades. 
+
+= 1.1.1 =
+
+Plugin will now automatically detect if the associated domain configuration has been removed via myRepono.com and will automatically default to an existing domain when possible.  Additional minor changes to optimise CSS.
+
+= 1.1.0 =
+
+Removal of WordPress is_rtl function requirement which meant WordPress v3.0+ was required.  Additional adjustments to backup listings and backup status module to improve usability.
+
+= 1.0.9 =
+
+Support for CURL Extension Emulation Library added enabling WordPress Backup Plugin and myRepono API to make outgoing HTTP/HTTPS connections when standard CURL support is not available, plugin/API will now attempt a range of connection methods if default methods fail.  Further changes to API/account set-up process to improve usability and customer understanding.
+
+= 1.0.8 =
+
+Resolved additional error when updating myRepono WordPress Backup Plugin.  API is not automatically installed after plugin update, 1.0.6 update addressed this when user visited plugin but not if user did not access plugin section - this update will re-install the API without requiring the user to visit the plugin section of your WordPress administration panel.  The plugin will also notify admin when the API is automatically re-installed.
+
+= 1.0.7 =
+
+Minor usability improvements and interface adjustments.
+
+= 1.0.6 =
+
+CRITICAL UPDATE RESOLVING ERROR WHEN UPDATING MYREPONO WORDPRESS BACKUP PLUGIN
+When updating the myRepono WordPress Backup Plugin your myRepono Backup API is removed which will in-turn cause your backups to fail, this version of the plugin will automatically re-install the API and will notify you if it is unable to do so.
+
+= 1.0.5 =
+
+Domain selection feature added enabling users to view backups for multiple domains (added under same myRepono.com account), with a single WordPress plugin.  Additional adjustments to API installation process in preparation for next API version, and new re-authentication system added for log-in when account password has changed.
+
+= 1.0.4 =
+
+General usability improvements and interface adjustments.
+
+= 1.0.3 =
+
+Minor adjustments to data caching.
+
+= 1.0.2 =
+
+Minor layout and content adjustments.
+
+= 1.0.1 =
+
+Minor adjustments to API installations.
+
+= 1.0.0 =
+
+First official release of plugin.
+
+
